@@ -107,6 +107,11 @@ uint32_t brute_force()
                 }
             }
             dist += mdist;
+
+            if( dist >= min_dist)
+            {
+                break;
+            }
         }
 
         if( dist < min_dist)
